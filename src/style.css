@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fef3e6;
+  color: #f07c82;
+  text-align: center;
+}
+
+.header {
+  background: #ffcad4;
+  padding: 20px;
+  border-bottom: 5px solid #ff8c94;
+}
+
+.main {
+  margin: 40px;
+}
+
+.main button {
+  padding: 10px 20px;
+  background: #ffc857;
+  color: #58355e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.main button:hover {
+  background: #ffa500;
+}
+
+.footer {
+  background: #ff8c94;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#eggContainer {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  margin-top: 20px;
+  border: 2px dashed #ff8c94;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.egg {
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background: radial-gradient(circle at center, #ffc857, #ffa500);
+  border-radius: 50% 50% 50% 50%;
+  animation: wiggle 3s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(15deg);
+  }
+}
